@@ -34,12 +34,18 @@
     <AssemblyOriginatorKeyFile>D:\Harris\RantaKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ranta.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=de363516f0e497fd, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ranta.Common.1.0.0.12\lib\net45\Ranta.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Ranta.LogMagic.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=de363516f0e497fd, processorArchitecture=MSIL">
       <HintPath>..\packages\Ranta.LogMagic.Contract.1.0.1\lib\net45\Ranta.LogMagic.Contract.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -53,6 +59,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\Ranta.LogMagic\Ranta.LogMagic.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
