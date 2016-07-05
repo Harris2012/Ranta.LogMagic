@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Ranta.LogMagic</id>
+    <version>1.0.1</version>
+    <title>Ranta.LogMagic</title>
+    <authors>Harris Zhang</authors>
+    <owners>Harris Zhang</owners>
+    <licenseUrl>http://http://www.ranta.cn</licenseUrl>
+    <projectUrl>http://http://www.ranta.cn</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/harriszhang14/Ranta/master/Ranta.Image/Icon/RantaIcon_150_150.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>To use third-part translation service.</description>
+    <releaseNotes>Initial version of Ranta.Translation.</releaseNotes>
+    <copyright>Copyright ranta 2016</copyright>
+    <tags>Ranta LogMagic</tags>
+    <dependencies>
+      <dependency id="Ranta.Common" version="[1.0.0.11,)" />
+      <dependency id="Ranta.LogMagic.Contract" version="[1.0.1,)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="web.config.transform" target="content" />
+    <file src="app.config.transform" target="content" />
+    <file src="Ranta.LogMagic.Net40\bin\Release\Ranta.LogMagic.dll" target="lib\net40" />
+    <file src="Ranta.LogMagic.Net40\bin\Release\Ranta.LogMagic.xml" target="lib\net40" />
+    <file src="Ranta.LogMagic.Net45\bin\Release\Ranta.LogMagic.dll" target="lib\net45" />
+    <file src="Ranta.LogMagic.Net45\bin\Release\Ranta.LogMagic.xml" target="lib\net45" />
+  </files>
+</package>
