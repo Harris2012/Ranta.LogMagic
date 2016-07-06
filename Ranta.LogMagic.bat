@@ -4,4 +4,6 @@ msbuild Ranta.LogMagic.Net45\Ranta.LogMagic.Net45.csproj /t:rebuild /p:configura
 
 nuget pack Ranta.LogMagic.nuspec
 
+move /y Ranta.LogMagic.*.nupkg ..\Nuget\Packages
+
 pause
